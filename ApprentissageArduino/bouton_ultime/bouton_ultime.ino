@@ -12,7 +12,6 @@ int lastState=0;
 
 // ledState est vrai lorsque la led est allumé
 int ledState=0;
-test
  
 void setup() {
   // indique que la broche de la LED est utilisée en sortie :
