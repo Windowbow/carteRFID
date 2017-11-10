@@ -12,6 +12,7 @@ int led;
 void setup() {
   // indique que la broche de la LED une sortie sortie :
   // on va modifier sa tension
+  Serial.begin(9600);
   for (led=5; led<14;led++) {
     if (led != 8) {
       pinMode(led, OUTPUT);
@@ -22,6 +23,8 @@ void setup() {
 void loop() {
     for (led=5; led<14;led++) {
     if (led != 8) {
+      Serial.print("numero");
+      Serial.println(led);
       digitalWrite(led, HIGH);   // allumer la LED         
       delay(500);               // attendre 1000 ms=1s
       digitalWrite(led, LOW);    // éteindre la LED
